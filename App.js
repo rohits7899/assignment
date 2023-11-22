@@ -33,7 +33,6 @@ function App() {
   };
 
   const modifyEmployee = (id, updatedEmployee) => {
-    // Logic to modify employee details
     const updatedEmployees = employees.map((employee) =>
       employee.id === id ? { ...employee, ...updatedEmployee } : employee
     );
@@ -41,7 +40,6 @@ function App() {
   };
 
   const deleteEmployee = (id) => {
-    // Logic to delete an employee from the list
     const updatedEmployees = employees.filter((employee) => employee.id !== id);
     setEmployees(updatedEmployees);
   };
